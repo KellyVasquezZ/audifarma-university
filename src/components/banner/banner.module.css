@@ -1,3 +1,30 @@
 .banner {
     width: 100vw;
+    position: relative;
+}
+
+.bannerTitle {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: white;
+    z-index: 1;
+}
+
+.bannerTitle h2 {
+    font-size: 70px;
+    margin: 0;
+}
+
+.bannerTitle h3 {
+    font-size: 40px;
+}
+
+.opacityVideo {
+    width: 100%;
+    opacity: 0.75;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
 }

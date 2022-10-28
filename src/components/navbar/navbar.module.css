@@ -1,5 +1,5 @@
 .headerArea {
-    width: 100%;
+    width: 100vw;
     position: fixed;
     top: 0;
     left: 0;
@@ -21,7 +21,6 @@
 
 .menu {
     background: linear-gradient(90deg, rgba(54,128,138,1) 0%, rgba(66,146,157,1) 60%, rgba(111,193,204,1) 100%);
-    padding: 20px;
     border-radius: 15px 0 0 15px;
 }
 
@@ -29,6 +28,36 @@
     font-weight: 600;
     letter-spacing: 1px;
     color: white;
+    text-decoration: none;
+}
+
+.menu a:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px white;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+.menu a:hover:after {
+    transform: scaleX(1); 
+}
+
+.elevationNavbar {
+    background-color: white;
+    box-shadow: 0px 5px 5px 0px rgb(0 0 0 / 10%);
+}
+
+.elevationNavbar .menu {
+    background: white;
+}
+
+.elevationNavbar .menu a {
+    color: var(--color-primary);
+}
+
+.elevationNavbar .menu a:after {
+    border-bottom: solid 3px var(--color-primary);
 }
 
 .dropdownMenu {
@@ -36,4 +65,37 @@
     gap: 20px;
     list-style: none;
     margin: 0 50px 0 0;
+}
+
+.dropdownMenu >li {
+    position: relative;
+    padding: 15px 10px;
+}
+
+.dropdownMenu li:hover ul {
+    display: block;
+}
+
+.dropdownMenu li ul {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 50px;
+    background-color: white;
+    box-shadow: -1px 2px 19px 3px rgb(14 0 40 / 5%);
+    border-radius: 5px;
+    list-style: none;
+    padding: 0;
+}
+
+.dropdownMenu li ul a {
+    font-weight: 500;
+    color: #202124;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.dropdownMenu li ul a:hover {
+    color: var(--color-secondary);
 }

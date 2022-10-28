@@ -1,3 +1,8 @@
+:root {
+    --color-primary: #111183;
+    --color-secondary: #37818b;
+}
+
 .d-flex {
     display: flex;
 }
