@@ -1,0 +1,39 @@
+.headerArea {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbarLogo {
+    height: 60px;
+    padding: 15px;
+}
+
+.menu {
+    background: linear-gradient(90deg, rgba(54,128,138,1) 0%, rgba(66,146,157,1) 60%, rgba(111,193,204,1) 100%);
+    padding: 20px;
+    border-radius: 15px 0 0 15px;
+}
+
+.menu a {
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.dropdownMenu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0 50px 0 0;
+}
