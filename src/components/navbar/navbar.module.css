@@ -133,7 +133,7 @@
     }
 
     .menu.active .dropdownMenu i {
-        display: block;
+        display: flex;
         color: var(--color-primary);
     }
 
@@ -143,6 +143,7 @@
 
     .toggleMenu {
         padding: 0 20px;
+        cursor: pointer;
     }
     
     .toggleMenu >div {

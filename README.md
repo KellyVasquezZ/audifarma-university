@@ -24,3 +24,8 @@ Para el modo desarrollo:
 Para la compilación del proyecto:
 
 	npm run build
+
+## Demo online 🚀
+
+    https://kellyvasquezz.github.io/audifarma-university/
+    

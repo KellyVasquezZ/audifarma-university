@@ -26,7 +26,7 @@ export const Navbar = ({ elevationNavbar }) => {
         <div className={ `${ styles.menu } ${ styles[active] ?? '' }` }>
           <ul className={ styles.dropdownMenu }>
             <li>
-              <a href="/"> <i className="fa-solid fa-house"></i> Inicio </a>
+              <a href="/"> Inicio </a>
             </li>
             <li>
               <div className="d-flex justify-content-between w-100">
