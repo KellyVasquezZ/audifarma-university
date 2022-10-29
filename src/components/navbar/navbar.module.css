@@ -1,5 +1,5 @@
 .headerArea {
-    width: 100vw;
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -82,6 +82,7 @@
     position: absolute;
     top: 50px;
     background-color: white;
+    border: 1px solid #e8e8e8;
     box-shadow: -1px 2px 19px 3px rgb(14 0 40 / 5%);
     border-radius: 5px;
     list-style: none;
@@ -98,4 +99,86 @@
 
 .dropdownMenu li ul a:hover {
     color: var(--color-secondary);
+}
+
+.toggleMenu {
+    padding: 0 20px;
+}
+
+.toggleMenu >div {
+    height: 3px;
+    width: 30px;
+    background-color: var(--color-secondary);
+    margin: 6px 0;
+    position: relative;
+    transition: .3s linear;
+}
+
+.toggleMenu.active >div:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 4px
+}
+
+.toggleMenu.active >div:nth-child(2) {
+    opacity: 0;
+}
+
+.toggleMenu.active >div:nth-child(3) {
+    transform: rotate(45deg);
+    bottom: 14px
+}
+
+.menu.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0;
+}
+
+.menu.active a {
+    color: var(--color-primary);
+}
+
+.menu.active .dropdownMenu {
+    flex-direction: column;
+    gap: 0;
+    margin: 30px 50px 0 0;
+}
+
+.logoMobile {
+    display: none;
+    justify-content: center;
+    padding: 20px 50px;
+}
+
+.menu.active .logoMobile {
+    display: flex;
+}
+
+.menu.active .dropdownMenu li ul {
+    width: 100%;
+    position: relative;
+    top: 0;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    list-style: none;
+    padding: 0;
+}
+
+@media (min-width: 769px) {
+    .toggleMenu {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
 }
