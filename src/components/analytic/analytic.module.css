@@ -6,6 +6,12 @@
     padding: 50px 10px;
 }
 
+.analyticImages {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .analyticArea h2, .analyticArea p, .analyticArea span {
     color: var(--color-primary);
     text-align: center;
@@ -17,4 +23,16 @@
 
 .analyticArea span {
     font-size: 22px;
+}
+
+@media (max-width: 768px) {
+    .analyticArea {
+        padding: 0 10px 50px;
+    }
+
+    .analyticImages {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
 }

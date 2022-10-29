@@ -29,7 +29,10 @@ export const Navbar = ({ elevationNavbar }) => {
               <a href="/"> <i className="fa-solid fa-house"></i> Inicio </a>
             </li>
             <li>
-              <a> Quienes Somos </a>
+              <div className="d-flex justify-content-between w-100">
+                <a> Quienes Somos </a>
+                <i className="fa-solid fa-chevron-down"></i>
+              </div>
               <ul>
                 <li>
                   <a href="/">Compañía</a>
@@ -43,7 +46,21 @@ export const Navbar = ({ elevationNavbar }) => {
               </ul>
             </li>
             <li>
-              <a href="/"> Programas </a>
+              <div className="d-flex justify-content-between w-100">
+                <a> Programas </a>
+                <i className="fa-solid fa-chevron-down"></i>
+              </div>
+              <ul>
+                <li>
+                  <a href="/">Farmacéutica</a>
+                </li>
+                <li>
+                  <a href="/">Ingeniería</a>
+                </li>
+                <li>
+                  <a href="/">Contaduría</a>
+                </li>
+              </ul>
             </li>
             <li>
               <a href="/"> Contáctenos </a>

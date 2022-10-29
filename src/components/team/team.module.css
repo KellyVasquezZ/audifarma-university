@@ -24,3 +24,10 @@
 .titleTeam h3 {
   font-size: 40px;
 }
+
+@media (max-width: 768px) {
+  .sectionTeam {
+    background-size: initial;
+  }
+  
+}

@@ -3,12 +3,20 @@
     position: relative;
 }
 
+.bannerVideo {
+    position: relative;
+}
+
 .bannerTitle {
     position: absolute;
     top: 40%;
-    left: 10%;
+    left: -40%;
     color: white;
     z-index: 1;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 1s;
 }
 
 .bannerTitle h2 {
@@ -26,5 +34,47 @@
     background-color: black;
     position: absolute;
     top: 0;
-    bottom: 0;
+    bottom: 6px;
+}
+
+.buttonBanner {
+  background: var(--color-secondary);
+  box-shadow: var(--color-secondary) 0 10px 20px -10px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 8px 18px;
+}
+
+.buttonBanner i {
+    margin-left: 10px;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 10%; }
+}
+
+@keyframes slide {
+    100% { left: 10%; }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        background-color: #E9E9E9;
+    }
+    .bannerTitle {
+        position: initial;
+        color: var(--color-primary);
+        padding: 30px 10px;
+        text-align: center;
+    }
+
+    .bannerTitle h2 {
+        font-size: 40px;
+    }
+
+    .bannerTitle h3 {
+        font-size: 30px;
+    }
 }

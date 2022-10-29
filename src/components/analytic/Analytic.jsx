@@ -8,20 +8,20 @@ export const Analytic = () => {
     <div className={ styles.analyticArea }>
         <div className="text-center">
             <h2>Analítica</h2>
-            <p>The full monty burke posh excuse my French Richard cheeky bobby <br/> spiffing crikey Why gormless, pear shaped.!</p>
+            <p>Cada día somos más <br /> Quiénes nos preparamos para el futuro</p>
         </div>
-        <div className="d-flex justify-content-evenly w-100">
+        <div className={ styles.analyticImages }>
             <div className="d-flex flex-column">
                 <img src={ courses } width="100" alt="" />
-                <span>+3000</span>
+                <span>+50<br/> Programas</span>
             </div>
             <div className="d-flex flex-column">
                 <img src={ students } width="100" alt="" />
-                <span>+3000</span>
+                <span>+3000 <br/> Estudiantes</span>
             </div>
             <div className="d-flex flex-column">
                 <img src={ graduates } width="100" alt="" />
-                <span>+3000</span>
+                <span>+800 <br/> Egresados</span>
             </div>
         </div>
     </div>
