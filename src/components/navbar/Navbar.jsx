@@ -14,7 +14,7 @@ export const Navbar = ({ elevationNavbar }) => {
         <div className={ styles.menu }>
           <ul className={ styles.dropdownMenu }>
             <li>
-              <a href="#"> <i class="fa-solid fa-house"></i> Inicio </a>
+              <a href="#"> <i className="fa-solid fa-house"></i> Inicio </a>
             </li>
             <li>
               <a href="#"> Quienes Somos </a>

@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react'
 import { Navbar } from '../../components/navbar/Navbar'
 import { Banner } from '../../components/banner/Banner'
+import { Team } from '../../components/team/Team'
 import { Footer } from '../../components/footer/Footer'
+import { Subscribe } from '../../components/subscribe/Subscribe'
 
 const Home = () => {
 
@@ -22,6 +24,8 @@ const Home = () => {
     <main>
       <Navbar elevationNavbar={elevationNavbar} />
       <Banner/>
+      <Team/>
+      <Subscribe/>
       <Footer/>
     </main>
   )

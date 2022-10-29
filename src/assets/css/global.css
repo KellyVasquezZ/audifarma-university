@@ -23,10 +23,18 @@
     justify-content: space-evenly;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .gap-10 {
     gap: 10px;
 }
 
 .p-30 {
     padding: 30px;
+}
+
+.w-100 {
+    width: 100%;
 }

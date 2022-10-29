@@ -1,0 +1,26 @@
+.sectionTeam {
+  background-image: url("./../../assets/img/team.jpg");
+  background-attachment: fixed;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+
+.titleTeam {
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleTeam h3 {
+  font-size: 40px;
+}
