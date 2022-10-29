@@ -1,0 +1,21 @@
+.analyticArea {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10px;
+}
+
+.analyticArea h2, .analyticArea p, .analyticArea span {
+    color: var(--color-primary);
+    text-align: center;
+}
+
+.analyticArea h2 {
+    font-size: 40px;
+}
+
+.analyticArea span {
+    font-size: 22px;
+}

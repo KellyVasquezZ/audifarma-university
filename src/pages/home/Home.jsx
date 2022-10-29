@@ -4,6 +4,7 @@ import { Banner } from '../../components/banner/Banner'
 import { Team } from '../../components/team/Team'
 import { Footer } from '../../components/footer/Footer'
 import { Subscribe } from '../../components/subscribe/Subscribe'
+import { Analytic } from '../../components/analytic/Analytic'
 
 const Home = () => {
 
@@ -24,6 +25,7 @@ const Home = () => {
     <main>
       <Navbar elevationNavbar={elevationNavbar} />
       <Banner/>
+      <Analytic/>
       <Team/>
       <Subscribe/>
       <Footer/>
